@@ -20,13 +20,6 @@ C'est tout ! Le script va :
 4. Afficher les résultats
 5. Créer un graphique `comparison.png`
 
-## Résultats Attendus 📊
-
-| Modèle | Accuracy | Temps | Paramètres |
-|--------|----------|-------|------------|
-| **CNN** | ~99% | ~2-3 min | ~500K |
-| **Transformer** | ~98% | ~3-4 min | ~80K |
-
 ##  Architectures
 
 ### CNN
@@ -96,6 +89,19 @@ Model: "functional_1"
 └─────────────────────┴───────────────────┴────────────┴───────────────────┘
 ```
 
+
+## Résultats (google colab t4 gpu)
+
+============================================================
+Métrique                  CNN             Transformer    
+------------------------------------------------------------
+Test Accuracy             99.30           88.51          
+Test Loss                 0.0236          0.3539         
+Training Time (s)         27.6            34.9           
+Paramètres                225,034         89,866         
+============================================================
+
+![Training Comparison](comparison.png)
 
 ## 💡 Observations
 
