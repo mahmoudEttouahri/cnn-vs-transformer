@@ -90,16 +90,14 @@ Model: "functional_1"
 ```
 
 
-## Résultats (google colab t4 gpu)
+## Résultats 📊 (google colab t4 gpu)
 
-============================================================
-Métrique                  CNN             Transformer    
-------------------------------------------------------------
-Test Accuracy             99.30           88.51          
-Test Loss                 0.0236          0.3539         
-Training Time (s)         27.6            34.9           
-Paramètres                225,034         89,866         
-============================================================
+| Modèle | Accuracy | Temps | Paramètres |
+|--------|----------|-------|------------|
+| **CNN** | ~99% | ~27s | ~225K |
+| **Transformer** | ~88% | ~34 s | ~89K |
+
+
 
 ![Training Comparison](comparison.png)
 
